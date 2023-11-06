@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Validation</title>
+</head>
+<body>
+    <?php
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    if ($username === 'admin' && $password === 'admin123') {
+        echo "<p>Login successful! You can access the secret page.</p>";
+    } else {
+        echo "<p>Login failed. Invalid credentials.</p>";
+    }
+    ?>
+</body>
+</html>
